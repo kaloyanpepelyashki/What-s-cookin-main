@@ -1,0 +1,114 @@
+:root {
+    --Magenta: #CA336A;
+    --Light-Magenta:#FF5C8D;
+    --Dark-Magenta: #931C39;
+    --Yellow:#FFEB3B;
+    --Pink:#FFA6A6;
+    --Light-grey:#EDEBEB;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #000;
+    --text-color-danger: rgb(152, 58, 58);
+    --white: #f1f1f1;
+  }
+
+
+
+
+
+
+body {
+    color: var(--text-color-dark);
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  h1 {
+    color: var(--text-color-dark);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  
+  }
+  
+  h2 {
+    color: var(--text-color-dark);
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+  
+  h3 {
+    color: var(--text-color-dark);
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+
+
+
+  /* ---------- nav styling ---------- */
+nav {
+  
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+@media (max-width: 450px){
+nav {
+position: absolute;  
+bottom: 0;
+border-top:solid 1px rgb(243, 237, 237);
+}
+.nav2{
+  display: none;
+}
+}
+
+
+
+
+@media (min-width: 450px){
+nav {
+  top: 0;  
+}
+.nav1{
+  display: none;
+}
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@media (max-width: 450px){
+  nav a {
+      font-size: 10px;
+  }
+
+}
+
+
+/* Change the color of links on hover */
+nav a:hover {
+  color: var(--Magenta);
+  
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  
+  color: var(--Magenta);
+}
+
